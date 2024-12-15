@@ -1,0 +1,257 @@
+/* Define root variables for colors */
+:root {
+  --color-dark: #1e202b;
+  --color-dark-alt: #262936;
+  --color-light: #fff;
+  --color-primary: #009ad8;
+}
+
+/* Set base font size for the html */
+html {
+  font-size: 14px;
+}
+
+/* General body styles */
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  background: var(--color-dark);
+  text-wrap: balance;
+}
+
+/* Style for links */
+a {
+  text-decoration: none;
+}
+
+/* Navbar styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: #1e202b;
+}
+
+/* Weather title and tagline styles */
+.weather-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.weather-tagline {
+  font-size: 12px;
+  color: inherit;
+  text-decoration: none;
+  color: #d2c4c4;
+}
+
+.weather-tagline:hover {
+  text-decoration: underline;
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active state for navbar links */
+.navbar-nav .nav-link.active {
+  color: #009ad8;
+  border-color: #009ad8;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Hover state for navbar links */
+.navbar-nav .nav-link:hover {
+  color: #009ad8;
+  border-color: #009ad8;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Navbar toggler styles for mobile view */
+.navbar-toggler-icon {
+  display: inline-block;
+}
+
+.navbar-toggler .close-icon {
+  display: none;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  display: inline-block;
+  color: #009ad8;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .close-icon {
+  display: inline-block;
+  color: #009ad8;
+}
+
+/* External navbar styles */
+.external-navbar {
+  background-color: #1e202b;
+  border-top: 2px solid #dee2e6;
+}
+
+.external-navbar a {
+  color: #fff;
+  font-size: 18px;
+  background-color: #1e202b;
+  border-radius: 50%;
+}
+
+/* Active state for external navbar links */
+.external-navbar.nav-link.active {
+  color: #009ad8;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 70px;
+  min-height: 350px;
+}
+
+/* Input fields in forms */
+.find-form input.form-control,
+.subscribe-form input.form-control {
+  padding: 20px 50px 20px 20px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  outline: none;
+  border-radius: 30px;
+}
+
+.find-form input.form-control:focus,
+.subscribe-form input.form-control:focus {
+  box-shadow: none;
+}
+
+.find-form input.form-control::placeholder,
+.subscribe-form input.form-control::placeholder {
+  color: #757575; /* Placeholder color */
+}
+
+/* Button style for search button */
+.btn-find {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+  border-radius: 30px;
+  color: var(--color-light);
+}
+
+/* Forecast table styles */
+.forecast-table {
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+/* Forecast card styles */
+.forecast {
+  background-color: #323544;
+}
+
+.card-header {
+  background-color: #1e202b;
+}
+
+.card-body {
+  background-color: #262936;
+}
+
+.card {
+  --bs-card-border-color: none;
+}
+
+/* Tomorrow forecast card styles */
+.forecast.tomorrow {
+  background-color: var(--color-dark-alt);
+}
+
+.forecast .forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  height: 50px;
+}
+
+.forecast .forecast-content {
+  padding: 30px 20px;
+  height: 250px;
+}
+
+/* Text styles for date, time, and temperature */
+.date {
+  font-size: 12px;
+}
+
+.time {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.forecast-content .num {
+  font-size: 70px;
+}
+
+.num,
+.degree {
+  color: var(--color-light);
+  font-weight: 700;
+}
+
+.custom {
+  color: var(--color-primary);
+}
+
+/* Footer styles */
+.footer {
+  background: var(--color-dark-alt);
+  padding: 50px 0;
+}
+
+/* Social media icons in footer */
+.footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--color-dark);
+  color: var(--color-primary);
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+/* Hover effect for social media icons */
+.footer .social-links a:hover {
+  background: var(--color-primary);
+  color: var(--color-light);
+}
